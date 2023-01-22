@@ -19,6 +19,14 @@
   --fs-500: 1.125rem;
   --fs-400: 1rem;
   --fs-300: 0.875rem;
+
+  --card-padding: 0.8rem;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --card-padding: 1.875rem;
+  }
 }
 
 /* box sizing */
@@ -244,7 +252,7 @@ body {
 .main__content {
   max-width: 920px;
   margin: 0 auto;
-  padding: 1.875rem;
+  padding: var(--card-padding);
 }
 
 .main h1 {
@@ -335,7 +343,7 @@ body {
 .section__wrapper {
   --gap: 3.5rem;
   flex-direction: column;
-  padding: 1.875rem;
+  padding: var(--card-padding);
 }
 
 .section__wrapper > * {
@@ -389,7 +397,7 @@ body {
 .package-section__card {
   --flow-spacing: 0.75rem;
   flex-direction: column;
-  padding: 1.875rem;
+  padding: var(--card-padding);
   border-radius: 8px;
 }
 
